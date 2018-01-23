@@ -1,11 +1,13 @@
 package 类和对象.扩展
 
+//扩展接收者
 class DD {
     fun bar() {
         println("bar")
     }
 }
 
+//分发接收者
 class CC {
     fun baz() {
         println("baz")

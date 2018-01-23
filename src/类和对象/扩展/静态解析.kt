@@ -11,6 +11,22 @@ fun printFoo(c: C) {
     println(c.foo())
 }
 
+class XX {
+    fun foo() {
+        println("member")
+    }
+}
+
+fun XX.foo() {
+    println("extension")
+}
+
+fun XX.foo(i: Int) {
+    println("i----->" + i)
+}
+
 fun main(args: Array<String>) {
     printFoo(D())
+    println(XX().foo())
+    println(XX().foo(3))
 }
